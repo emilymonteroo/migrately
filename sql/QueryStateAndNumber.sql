@@ -13,10 +13,11 @@ declare @PageIndex int = 0
 		,@Query nvarchar(100) = 'cal'
 		,@LicenseNumber nvarchar(100) = '8'
 
-execute dbo.[Licenses_QueryStateAndNumber] @PageIndex 
-                               ,@PageSize 
-							   ,@Query
-							   ,@LicenseNumber
+execute dbo.[Licenses_QueryStateAndNumber] 
+		@PageIndex 
+                ,@PageSize 
+		,@Query
+		,@LicenseNumber
 
 
 select * from dbo.licenses

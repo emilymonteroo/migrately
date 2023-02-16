@@ -9,7 +9,6 @@
         void Delete(int id);
         List <License> SelectCreatedBy(int createdBy);
         License GetById(int id);
-
         Paged<License> GetByQueryAndLicense(int pageIndex, int pageSize, string query, string licenseNumber);
     }
 }
